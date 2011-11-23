@@ -1,0 +1,7 @@
+--ignore-dir=tmp
+--ignore-dir=spec/javascripts/generated
+--ignore-dir=log
+--ignore-dir=db/bootstrap
+--ignore-dir=vendor/gems
+--ignore-dir=coverage
+--ignore-dir=public
