@@ -1,0 +1,13 @@
+" Tab completion
+set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*,tmp/*,coverage/*,public/*,spec/javascripts/generated/*,db/bootstrap/*,vendor/gems/:
+
+" Command-T configuration
+let g:CommandTMaxFiles=20000
+
+" ConqueTerm configuration
+let g:ConqueTerm_ReadUnfocused = 1
+let g:ConqueTerm_InsertOnEnter = 1
+
+" Unbind the F1 help key
+:nmap <F1> :echo<CR>
+:imap <F1> <C-o>:echo<CR>
