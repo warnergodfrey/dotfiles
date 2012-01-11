@@ -1,7 +1,10 @@
---ignore-dir=tmp
---ignore-dir=spec/javascripts/generated
---ignore-dir=log
---ignore-dir=db/bootstrap
+--type-set=sass=.sass
+--type-set=coffee=.coffee
+--type-set=handlebars=.handlebars
 --ignore-dir=vendor/gems
+--ignore-dir=tmp
 --ignore-dir=coverage
 --ignore-dir=public
+--ignore-dir=spec/javascripts/generated
+--ignore-dir=db/bootstrap
+--ignore-dir=vendor/gems
