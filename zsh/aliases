@@ -26,7 +26,7 @@ alias sg='script/generate'
 alias a='autotest -rails'
 alias tlog='tail -f log/development.log'
 alias scaffold='script/generate nifty_scaffold'
-alias migrate='rake db:migrate db:test:clone'
+alias migrate='rake db:migrate db:test:prepare'
 alias rst='touch tmp/restart.txt'
 
 # commands starting with % for pasting from web
