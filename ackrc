@@ -1,6 +1,7 @@
 --type-set=sass=.sass
 --type-set=coffee=.coffee
 --type-set=handlebars=.handlebars
+--type-set=haml=.haml
 --ignore-dir=vendor/gems
 --ignore-dir=tmp
 --ignore-dir=coverage
@@ -8,3 +9,4 @@
 --ignore-dir=spec/javascripts/generated
 --ignore-dir=db/bootstrap
 --ignore-dir=vendor/gems
+--ignore-dir=.idea
