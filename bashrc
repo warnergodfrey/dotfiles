@@ -2,10 +2,9 @@ source ~/.bash/aliases
 source ~/.bash/completions
 source ~/.bash/paths
 source ~/.bash/config
-source ~/.bash/rvm
 source ~/.bash/prompt
-
-source ~/work/bash-publish_to/bash_publish_to.sh
+source ~/.bash/rbenv
+source ~/.bash/bundler-exec
 
 # use .localrc for settings specific to one system
 if [ -f ~/.localrc ]; then

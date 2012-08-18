@@ -1,2 +1,4 @@
 set background=light
 color solarized
+
+set guioptions-=T

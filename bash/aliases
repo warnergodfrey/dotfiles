@@ -14,5 +14,3 @@ function railsapp {
 # misc
 alias reload='. ~/.bash_profile'
 alias cleanswp='find $HOME -name *.swp -exec rm {} \;'
-
-. ~/work/bundler-exec/bundler-exec.sh
