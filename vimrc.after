@@ -1,3 +1,5 @@
+syntax enable
+
 " Tab completion
 set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*,tmp/*,coverage/*,public/*,spec/javascripts/generated/*,db/bootstrap/*,vendor/gems/:
 

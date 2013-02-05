@@ -1,4 +1,5 @@
+syntax enable
 set background=light
-color solarized
+colorscheme solarized
 
 set guioptions-=T
