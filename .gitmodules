@@ -4,3 +4,18 @@
 [submodule "janus/vim-colors-solarized"]
 	path = janus/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule "janus/vim-rails"]
+	path = janus/vim-rails
+	url = git://github.com/tpope/vim-rails.git
+[submodule "janus/vim-bundler"]
+	path = janus/vim-bundler
+	url = git://github.com/tpope/vim-bundler.git
+[submodule "janus/tabular"]
+	path = janus/tabular
+	url = git://github.com/godlygeek/tabular.git
+[submodule "janus/vim-surround"]
+	path = janus/vim-surround
+	url = git://github.com/tpope/vim-surround.git
+[submodule "janus/copypath"]
+	path = janus/copypath
+	url = git://github.com/vim-scripts/copypath.vim.git
