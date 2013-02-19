@@ -19,3 +19,6 @@
 [submodule "janus/copypath"]
 	path = janus/copypath
 	url = git://github.com/vim-scripts/copypath.vim.git
+[submodule "janus/ctags.vim"]
+	path = janus/ctags.vim
+	url = git://github.com/vim-scripts/ctags.vim.git
