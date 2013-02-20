@@ -22,3 +22,6 @@
 [submodule "janus/ctags.vim"]
 	path = janus/ctags.vim
 	url = git://github.com/vim-scripts/ctags.vim.git
+[submodule "janus/vim-powerline"]
+	path = janus/vim-powerline
+	url = git://github.com/Lokaltog/vim-powerline.git
