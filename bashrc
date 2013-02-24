@@ -3,7 +3,7 @@ source ~/.bash/completions
 source ~/.bash/paths
 source ~/.bash/config
 source ~/.bash/prompt
-source ~/.bash/rbenv
+source ~/.bash/rvm
 source ~/.bash/bundler-exec
 
 # use .localrc for settings specific to one system
