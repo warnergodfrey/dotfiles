@@ -5,6 +5,7 @@ gem: --no-ri --no-rdoc
 :sources: 
 - http://gems.rubyforge.org
 - http://gems.github.com
+- http://dist/rubygems/
 :backtrace: false
 :bulk_threshold: 1000
 :benchmark: false
