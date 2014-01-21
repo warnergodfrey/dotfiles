@@ -2,6 +2,10 @@
 --type-set=coffee=.coffee
 --type-set=handlebars=.handlebars
 --type-set=haml=.haml
+--type-set=feature=.feature
+--type-set=rep=.rep
+--type-set=json=.json
+--type-set=yaml=.yml
 --ignore-dir=vendor/gems
 --ignore-dir=tmp
 --ignore-dir=coverage

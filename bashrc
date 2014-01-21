@@ -5,6 +5,7 @@ source ~/.bash/config
 source ~/.bash/prompt
 source ~/.bash/rvm
 source ~/.bash/bundler-exec
+source ~/.bash/aws
 
 # use .localrc for settings specific to one system
 if [ -f ~/.localrc ]; then
