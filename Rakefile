@@ -2,11 +2,11 @@ require 'rake'
 require 'erb'
 
 desc "install the dot files into user's home directory"
-task :install do
+task :install => :update_submodules do
   replace_all = false
   Dir['*'].each do |file|
     next if %w[Rakefile README.rdoc LICENSE].include? file
-
+    
     if File.exist?(File.join(ENV['HOME'], ".#{file.sub('.erb', '')}"))
       if File.identical? file, File.join(ENV['HOME'], ".#{file.sub('.erb', '')}")
         puts "identical ~/.#{file.sub('.erb', '')}"
@@ -30,6 +30,12 @@ task :install do
       link_file(file)
     end
   end
+end
+
+desc "initialise and update all submodules within the project"
+task :update_submodules do
+  system "git submodule init"
+  system "git submodule update"
 end
 
 def replace_file(file)
