@@ -1,5 +1,3 @@
-. ~/.zsh/aliases
-
 # changing directory to code project
 function c { cd ~/work/$1; }
 
