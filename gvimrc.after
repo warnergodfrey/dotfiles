@@ -1,9 +1,0 @@
-syntax enable
-set background=light
-colorscheme solarized
-
-set guioptions-=T
-
-set guifont=Menlo:h15
-
-let g:ctrlp_match_window_reversed=0
