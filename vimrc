@@ -28,6 +28,7 @@ Bundle 'edsono/vim-matchit'
 Bundle 'mattn/webapi-vim'
 Bundle 'bling/vim-airline'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'vim-scripts/copypath.vim'
 
 " Languages/Syntax
 Bundle 'chrisbra/csv.vim'
