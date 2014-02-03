@@ -21,7 +21,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
 Bundle 'ervandew/supertab'
-Bundle 'ddollar/nerdcommenter'
+Bundle 'scrooloose/nerdcommenter'
 Bundle 'rizzatti/funcoo.vim'
 Bundle 'rizzatti/dash.vim'
 Bundle 'edsono/vim-matchit'
@@ -29,6 +29,7 @@ Bundle 'mattn/webapi-vim'
 Bundle 'bling/vim-airline'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'vim-scripts/copypath.vim'
+Bundle 'vim-scripts/Align'
 
 " Languages/Syntax
 Bundle 'chrisbra/csv.vim'
@@ -142,7 +143,7 @@ set directory^=~/.vim/_temp//      " where to put swap files.
 
 " Use \ and , as leader keys
 let mapleader = ","
-nmap \ ,
+map \ ,
 
 " Navigate buffers
 map <M-D-Left> :bp<CR>
@@ -349,3 +350,15 @@ let g:airline#extensions#tabline#enabled = 1
 
 " CopyPath
 map <leader>c :CopyPath<CR>
+
+" NERDCommenter
+if has("gui_macvim") && has("gui_running")
+  map <D-/> <plug>NERDCommenterToggle<CR>
+  imap <D-/> <Esc><plug>NERDCommenterToggle<CR>i
+else
+  map <leader>/ <plug>NERDCommenterToggle<CR>
+endif
+
+" Align
+vmap <leader>a :Align
+
