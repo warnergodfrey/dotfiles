@@ -340,7 +340,8 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)$',
   \ 'file': '\.pyc$\|\.pyo$\|\.rbc$|\.rbo$\|\.class$\|\.o$\|\~$\',
   \ }
-map <leader>f :CtrlP<CR>
+map <leader>p :CtrlP<CR>
+map <leader>l :CtrlPBuffer<CR>
 map <leader>b :CtrlPBuffer<CR>
 
 " Airline
