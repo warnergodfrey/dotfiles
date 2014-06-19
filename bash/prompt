@@ -2,23 +2,24 @@ export PROMPT_COMMAND=_prompt_format
 
 function _prompt_format() {
   local last_command_status="$?"
+  local red=$(tput setaf 1)
 
   # colours
-  local default_colour="\e[0m\]"
+  local default_colour=$(tput sgr0)
   local prompt_colour=$(_prompt_colour $last_command_status)
 
   # assemble prompt
-  export PS1=''
-  PS1+=$prompt_colour
+  PS1="\[${prompt_colour}\]"
   PS1+="\W"
   PS1+=$(_git_branch $prompt_colour)
-  PS1+=":${default_colour} "
+  PS1+=":\[${default_colour}\] "
+  export PS1
 }
 
 function _git_branch {
   local prompt_colour=$1
-  local yellow="\e[0;33m\]"
-  local default="\e[0m\]"
+  local yellow=$(tput setaf 3)
+  local default=(tput sgr0)
   local branch_name=$(_git_branch_name)
 
   if [ ! $branch_name ]; then
@@ -29,7 +30,7 @@ function _git_branch {
     branch_name+='*'
   fi
 
-  echo "[${yellow}${branch_name}${prompt_colour}]"
+  echo "[\[${yellow}\]${branch_name}\[${prompt_colour}\]]"
 }
 
 function _git_branch_name {
@@ -47,8 +48,8 @@ function _git_dirty? {
 
 function _prompt_colour {
   local status=$1
-  local red="\e[0;31m\]"
-  local green="\e[0;32m\]"
+  local red=$(tput setaf 1)
+  local green=$(tput setaf 2)
 
   if [ $status != 0 ]; then
     echo $red
