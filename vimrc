@@ -39,6 +39,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-markdown'
 Bundle 'pangloss/vim-javascript'
+Bundle 'fatih/vim-go'
 
 filetype plugin indent on
 

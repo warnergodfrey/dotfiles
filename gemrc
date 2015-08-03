@@ -5,7 +5,6 @@ gem: --no-ri --no-rdoc
 :sources:
 - http://rubygems.org
 - http://gems.github.com
-- http://rea-rubygems.vpc.realestate.com.au
 :backtrace: false
 :bulk_threshold: 1000
 :benchmark: false

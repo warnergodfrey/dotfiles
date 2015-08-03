@@ -1,0 +1,5 @@
+status=`boot2docker status`
+if [ $status != 'running' ]; then
+  boot2docker start 2&>1 /dev/null
+fi
+$(boot2docker shellinit 2> /dev/null)

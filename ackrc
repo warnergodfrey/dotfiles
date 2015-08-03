@@ -1,3 +1,4 @@
+--type-set=js=.js
 --type-set=sass=.sass
 --type-set=coffee=.coffee
 --type-set=handlebars=.handlebars
@@ -6,10 +7,12 @@
 --type-set=rep=.rep
 --type-set=json=.json
 --type-set=yaml=.yml
+--ignore-dir=automation
 --ignore-dir=vendor/gems
+--ignore-dir=packages
+--ignore-dir=bower_components
 --ignore-dir=tmp
 --ignore-dir=coverage
---ignore-dir=public
 --ignore-dir=spec/javascripts/generated
 --ignore-dir=db/bootstrap
 --ignore-dir=vendor/gems
