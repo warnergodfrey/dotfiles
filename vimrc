@@ -50,7 +50,7 @@ call vundle#end()
 ""
 
 set guioptions-=T
-set guifont=Menlo\ Regular\ for\ Powerline:h15
+set guifont=Menlo\ Regular\ for\ Powerline:h13
 
 ""
 "" Color Scheme
