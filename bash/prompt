@@ -22,7 +22,7 @@ function _git_branch {
   local default=(tput sgr0)
   local branch_name=$(_git_branch_name)
 
-  if [ ! $branch_name ]; then
+  if [ ! "$branch_name" ]; then
     return
   fi
 
