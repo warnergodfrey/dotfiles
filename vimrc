@@ -1,47 +1,49 @@
 ""
 "" Plugins
 ""
+set nocompatible      " Use vim, no vi defaults
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
 " Colors
-Bundle 'altercation/vim-colors-solarized'
+Plugin 'altercation/vim-colors-solarized'
 
 " Tools
-Bundle 'mileszs/ack.vim'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-endwise'
-Bundle 'tpope/vim-git'
-Bundle 'kien/ctrlp.vim'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/syntastic'
-Bundle 'ervandew/supertab'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'rizzatti/funcoo.vim'
-Bundle 'rizzatti/dash.vim'
-Bundle 'edsono/vim-matchit'
-Bundle 'mattn/webapi-vim'
-Bundle 'bling/vim-airline'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'vim-scripts/copypath.vim'
-Bundle 'vim-scripts/Align'
+Plugin 'mileszs/ack.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-git'
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'ervandew/supertab'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'rizzatti/funcoo.vim'
+Plugin 'rizzatti/dash.vim'
+Plugin 'edsono/vim-matchit'
+Plugin 'mattn/webapi-vim'
+Plugin 'bling/vim-airline'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'vim-scripts/copypath.vim'
+Plugin 'vim-scripts/Align'
 
 " Languages/Syntax
-Bundle 'chrisbra/csv.vim'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'skwp/vim-rspec'
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-haml'
-Bundle 'tpope/vim-markdown'
-Bundle 'pangloss/vim-javascript'
-Bundle 'fatih/vim-go'
+Plugin 'chrisbra/csv.vim'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'skwp/vim-rspec'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-haml'
+Plugin 'tpope/vim-markdown'
+Plugin 'pangloss/vim-javascript'
+Plugin 'fatih/vim-go'
 
-filetype plugin indent on
+call vundle#end()
+
 
 ""
 "" Font
@@ -54,6 +56,7 @@ set guifont=Menlo\ Regular\ for\ Powerline:h15
 "" Color Scheme
 ""
 
+syntax enable         " Turn on syntax highlighting allowing local overrides
 if has('gui_running')
   set background=light
 else
@@ -65,8 +68,6 @@ colorscheme solarized
 "" Basic Setup
 ""
 
-syntax enable         " Turn on syntax highlighting allowing local overrides
-set nocompatible      " Use vim, no vi defaults
 set number            " Show line numbers
 set ruler             " Show line and column number
 set cursorline
