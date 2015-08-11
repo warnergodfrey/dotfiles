@@ -50,7 +50,11 @@ call vundle#end()
 ""
 
 set guioptions-=T
-set guifont=Menlo\ Regular\ for\ Powerline:h13
+if has("gui_macvim")
+  set guifont=Menlo\ Regular\ for\ Powerline:h13
+else
+  set guifont=Inconsolata\ for\ Powerline\ Medium\ 13
+endif
 
 ""
 "" Color Scheme
