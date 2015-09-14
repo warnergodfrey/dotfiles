@@ -8,7 +8,8 @@ source ~/.bash/prompt
 #source ~/.bash/rbenv
 source ~/.bash/rvm
 source ~/.bash/bundler-exec
-source ~/.bash/boot2docker
+#source ~/.bash/boot2docker
+source ~/.bash/docker_machine
 source ~/.bash/travis
 if [ -f ~/.bash/atlas ]; then
   source ~/.bash/atlas
