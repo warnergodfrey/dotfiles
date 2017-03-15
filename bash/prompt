@@ -38,7 +38,7 @@ function _git_branch_name {
 }
 
 function _git_dirty? {
-  local clean_msg="nothing to commit, working directory clean"
+  local clean_msg="nothing to commit, working tree clean"
   if [[ $(git status 2> /dev/null | tail -n1) != $clean_msg ]]; then
     return 0 #is dirty
   else
