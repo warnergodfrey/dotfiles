@@ -5,15 +5,17 @@ source ~/.bash/completions
 source ~/.bash/paths
 source ~/.bash/config
 source ~/.bash/prompt
+#source ~/.bash/android
+#source ~/.bash/java
 #source ~/.bash/rbenv
-source ~/.bash/rvm
-source ~/.bash/bundler-exec
-#source ~/.bash/boot2docker
-source ~/.bash/docker_machine
-source ~/.bash/travis
-if [ -f ~/.bash/atlas ]; then
-  source ~/.bash/atlas
-fi
+#source ~/.bash/rvm
+#source ~/.bash/bundler-exec
+#source ~/.bash/docker_machine
+#source ~/.bash/travis
+#source ~/.bash/golang
+#if [ -f ~/.bash/atlas ]; then
+  #source ~/.bash/atlas
+#fi
 
 # use .localrc for settings specific to one system
 if [ -f ~/.localrc ]; then
