@@ -1,3 +1,5 @@
-if [ $(which brew) -a -f $(brew --prefix)/etc/bash_completion ]; then
-    . $(brew --prefix)/etc/bash_completion
+if [[ $OSTYPE == darwin* ]]; then
+  if [ $(which brew) -a -f $(brew --prefix)/etc/bash_completion ]; then
+      . $(brew --prefix)/etc/bash_completion
+  fi
 fi

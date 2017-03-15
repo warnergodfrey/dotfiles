@@ -1,2 +1,6 @@
-export PATH="~/bin:~/.bin:/usr/local/homebrew/bin:/usr/local/bin:/usr/local/sbin:/usr/local/git/bin:$PATH"
+if [[ $OSTYPE == darwin* ]]; then
+  export PATH="~/bin:~/.bin:/usr/local/homebrew/bin:/usr/local/bin:/usr/local/sbin:/usr/local/git/bin:$PATH"
+else
+  export PATH="~/bin:~/.bin:/usr/local/bin:/usr/local/sbin:/usr/local/git/bin:$PATH"
+fi
 export MANPATH="/usr/local/man:/usr/local/git/man:$MANPATH"

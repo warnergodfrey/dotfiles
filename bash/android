@@ -1,3 +1,7 @@
-export ANDROID_HOME=~/Library/Android/sdk
+if [[ $OSTYPE == darwin* ]]; then
+  export ANDROID_HOME=~/Library/Android/sdk
+else
+  export ANDROID_HOME=$HOME/Android/Sdk
+fi
 export PATH=$ANDROID_HOME/tools:$PATH
 export PATH=$ANDROID_HOME/platform-tools:$PATH
