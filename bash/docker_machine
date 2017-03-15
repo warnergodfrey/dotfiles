@@ -1,6 +1,5 @@
-machine_name=dev
+machine_name=default
 status=`docker-machine status $machine_name`
-if [ $status != 'Running' ]; then
-  docker-machine start dev > /dev/null 2>&1
+if [ $status = 'Running' ]; then
+  eval "$(docker-machine env $machine_name)"
 fi
-eval "$(docker-machine env dev)"
