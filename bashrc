@@ -5,6 +5,8 @@ source ~/.bash/completions
 source ~/.bash/paths
 source ~/.bash/config
 source ~/.bash/prompt
+source ~/.bash/serverless
+source ~/.bash/node
 #source ~/.bash/android
 #source ~/.bash/java
 #source ~/.bash/rbenv
